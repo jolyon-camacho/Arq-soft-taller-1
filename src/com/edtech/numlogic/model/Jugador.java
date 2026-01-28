@@ -2,7 +2,9 @@ package com.edtech.numlogic.model;
 
 /**
  * Represents a player in NumLogic Explorer.
- * Adheres to Clean Code: Descriptive naming and single responsibility.
+ * This class stores the personal data of the child playing and keeps track of
+ * their
+ * individual performance metrics such as personal best score.
  */
 public class Jugador {
     private String nombre;
@@ -10,6 +12,13 @@ public class Jugador {
     private String curso;
     private int mejorPuntaje; // Number of attempts in the best game
 
+    /**
+     * Initializes a new player with technical metadata.
+     * 
+     * @param nombre The name of the child.
+     * @param edad   The age of the child.
+     * @param curso  The current grade or course.
+     */
     public Jugador(String nombre, int edad, String curso) {
         this.nombre = nombre;
         this.edad = edad;
