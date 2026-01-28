@@ -37,9 +37,9 @@ public class ControladorJuego {
     }
 
     private void registrarJugador() {
-        String nombre = vista.capturarTexto("Introduce tu nombre");
-        int edad = vista.capturarEntero("Introduce tu edad");
-        String curso = vista.capturarTexto("Introduce tu curso/grado");
+        String nombre = vista.capturarTexto("Introduce tu nombre:");
+        int edad = vista.capturarEntero("Introduce tu edad: (Ejemplo: 10)");
+        String curso = vista.capturarTexto("Introduce tu curso/grado: (Ejemplo: 402)");
 
         this.jugador = new Jugador(nombre, edad, curso);
     }
